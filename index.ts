@@ -21,7 +21,7 @@ const rawInput = await fetch(
   `https://adventofcode.com/${year}/day/${day}/input`,
   {
     headers: {
-      cookie: `session=${Bun.env.AOC_SESSION}`,
+      cookie: `session=${Bun.env.AOC_SESSION}`, // session cookie value from aoc website
     },
   }
 );
